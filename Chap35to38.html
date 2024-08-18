@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  CHAPTER 35 TO 38
+
+        // Q1
+
+        // document.write("<h1>Question no : 1</h1>")
+
+        // function displayTime() {
+        //     var now = new Date();
+        //     document.write(now);
+        // }
+        // displayTime();
+
+        // // Q2
+
+        // document.write("<h1>Question no : 2</h1>")
+
+        // // function greet() {
+        // //     var firstName = prompt("Enter your first name");
+        // //     var lastName = prompt("Enter your last name");
+        // //     document.write("Hello" + " " + firstName + " " + lastName);
+
+        // // }
+        // // greet();
+
+        // // Q3
+
+        // document.write("<h1>Question no : 3</h1>")
+
+        // // function addNum(num1 , num2) {
+        // //     return(num1 + num2);
+
+        // // }
+        // // var number1 = parseFloat(prompt("Enter first number"));
+        // // var number2 = parseFloat(prompt("Enter second number"));
+        // // var sum = addNum(number1 , number2);
+        // // console.log("The sum of two number is :" + " " +sum);
+
+        // //Q4
+        // document.write("<h1>Question no : 4</h1>")
+
+        // function add(a, b) {
+        //     return a + b;
+        // }
+        // function subtract(a, b) {
+        //     return a - b;
+
+        // }
+        // function multiply(a, b) {
+        //     return a * b;
+
+        // }
+        // function divide(a, b) {
+        //     if (b !== 0) {
+        //         return a / b;
+        //     } else {
+        //         alert("Error !")
+        //     }
+
+        // }
+        // function calculator() {
+        //     var firstNum = parseFloat(prompt("Enter first number"));
+        //     var secondNum = parseFloat(prompt("Enter second number"));
+        //     var operator = prompt("Enter operator '+' ',-' ,'*' ,'/'");
+
+        //     var result;
+        //     switch (operator) {
+        //         case "+":
+        //             result = add(firstNum, secondNum);
+        //             break;
+
+        //         case "-":
+        //             result = subtract(firstNum, secondNum);
+        //             break;
+
+        //         case "*":
+        //             result = multiply(firstNum, secondNum);
+        //             break;
+
+        //         case "/":
+        //             result = divide(firstNum, secondNum);
+        //             break;
+
+        //         default:
+        //             alert("Invalid Operator !")
+        //             break;
+        //     }
+        //     document.write("The result is : " + result);
+        // }
+
+        // calculator();
+
+        // // Q5
+        // document.write("<h1>Question no : 5</h1>")
+
+        // function squareNum(number) {
+        //     return number * number;
+        // }
+
+        // var number = parseInt(prompt("Enter a number to square:"));
+        // var square = squareNum(number);
+        // console.log("The square of the number is: " + square);
+
+        // // Q6
+        // document.write("<h1>Question no : 6</h1>")
+        // function factorial(n) {
+        //     if (n === 0 || n === 1) {
+        //         return 1;
+        //     } else {
+        //         return n * factorial(n - 1);
+        //     }
+        // }
+        // var numInput = parseInt(prompt("Enter a number to compute its factorial:"));
+        // var result = factorial(numInput);
+        // console.log("The factorial of " + numInput + " is: " + result);
+
+        // // Q7
+        // document.write("<h1>Question no : 7</h1>")
+
+        // function displayCounting(start, end) {
+        //     var counting = '';
+        //     for (var i = start; i <= end; i++) {
+        //         counting += i + ' ';
+        //     }
+        //     return counting;
+        // }
+        // var startNumber = parseInt(prompt("Enter the start number:"));
+        // var endNumber = parseInt(prompt("Enter the end number:"));
+
+        // var countingResult = displayCounting(startNumber, endNumber);
+        // console.log("Counting: " + countingResult);
+
+        // //  Q8
+        // document.write("<h1>Question no : 8</h1>")
+
+        // function calculateHypotenuse(base, perpendicular) {
+        //     function calculateSquare(value) {
+        //         return value * value;
+        //     }
+        //     // Calculate the squares of base and perpendicular
+        //     var baseSquared = calculateSquare(base);
+        //     var perpendicularSquared = calculateSquare(perpendicular);
+        //     // Calculate the hypotenuse using the Pythagorean theorem
+        //     var hypotenuseSquared = baseSquared + perpendicularSquared;
+        //     var hypotenuse = Math.sqrt(hypotenuseSquared);
+
+        //     return hypotenuse;
+        // }
+        // var base = 3;
+        // var perpendicular = 4;
+        // console.log("The hypotenuse is: " + calculateHypotenuse(base, perpendicular));
+
+        // // Q9
+        // // i.Arguments as values
+        // document.write("<h1>Question no : 9</h1>")
+
+        // function calculateArea(width, height) {
+        //     return width * height;
+        // }
+        // //  Arguments passed as values
+        // console.log(calculateArea(5, 10));  // Output: 50
+
+        // // ii. Arguments as variables
+        // function calculateArea(width, height) {
+        //     return width * height;
+
+        // }
+        // var w = 8;
+        // var h = 12;
+        // console.log(calculateArea(w, h));
+
+        // Q10
+        document.write("<h1>Question no : 10</h1>")
+
+
+
+
+
+
+        // Q11
+        document.write("<h1>Question no : 11</h1>")
+
+        function capitalizeFirstWord(str) {
+            var words = str.split('');
+            var capitalWords = [];
+
+            //loop for each word
+            for (var i = 0; i < words.length; i++) {
+                var wordsCapital = words[i][0].toUpperCase() + words[i].slice(2);
+                capitalWords.push(wordsCapital);
+            }
+            return capitalWords.join('');
+        }
+
+        var exampleStr = 'the quick brown fox';
+        var conclusion = capitalizeFirstWord(exampleStr);
+        console.log(conclusion);
+
+        // Q12
+        document.write("<h1>Question no : 12</h1>")
+        function longestWord(str) {
+            var words = str.split('');
+            var longestWord = ' ';
+            for(var i = 0; i < words.length; i++){
+                if (words[i].length > longestWord.length) {
+                    longestWord = words[i];
+                }
+            }
+            return longestWord;
+
+            
+        }
+         var answer = longestWord("Web Development Tutorial");
+         console.log(answer);
+
+        //  Q13
+        document.write("<h1>Question no : 13</h1>")
+        function countOccurrences(str , letter) {
+            var count = 0;
+            for (var i = 0; i < str.length; i++){
+                if (str[i] === letter){
+                    count++;
+                }
+            }
+            return count;
+            
+        }
+        var answer2 = countOccurrences('JSResourceS.com', 'o');
+        console.log(answer2);
+
+        // Q14
+        document.write("<h1>Question no : 14</h1>")
+        function calcCircumference(radius) {
+            var circumference = 2 * Math.PI * radius;
+            console.log('The circumference is :' + circumference.toFixed(2));
+           
+        }
+        function calcArea(radius) {
+            var area = Math.PI * Math.pow(radius , 2);
+            console.log('The area is :' + area.toFixed(2));
+            
+        }
+
+        calcCircumference(5);
+        calcArea(5);
+        
+         
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
