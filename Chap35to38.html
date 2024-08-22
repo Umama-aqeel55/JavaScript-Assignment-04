@@ -10,178 +10,185 @@
 
         // Q1
 
-        // document.write("<h1>Question no : 1</h1>")
+         document.write("<h1>Question no : 1</h1>")
 
-        // function displayTime() {
-        //     var now = new Date();
-        //     document.write(now);
-        // }
-        // displayTime();
+        function displayTime() {
+            var now = new Date();
+            document.write(now);
+        }
+        displayTime();
 
-        // // Q2
+        // Q2
 
-        // document.write("<h1>Question no : 2</h1>")
+        document.write("<h1>Question no : 2</h1>")
 
-        // // function greet() {
-        // //     var firstName = prompt("Enter your first name");
-        // //     var lastName = prompt("Enter your last name");
-        // //     document.write("Hello" + " " + firstName + " " + lastName);
+        function greet() {
+            var firstName = prompt("Enter your first name");
+            var lastName = prompt("Enter your last name");
+            document.write("Hello" + " " + firstName + " " + lastName);
 
-        // // }
-        // // greet();
+        }
+        greet();
 
-        // // Q3
+        // Q3
 
-        // document.write("<h1>Question no : 3</h1>")
+        document.write("<h1>Question no : 3</h1>")
 
-        // // function addNum(num1 , num2) {
-        // //     return(num1 + num2);
+        function addNum(num1 , num2) {
+            return(num1 + num2);
 
-        // // }
-        // // var number1 = parseFloat(prompt("Enter first number"));
-        // // var number2 = parseFloat(prompt("Enter second number"));
-        // // var sum = addNum(number1 , number2);
-        // // console.log("The sum of two number is :" + " " +sum);
+        }
+        var number1 = parseFloat(prompt("Enter first number"));
+        var number2 = parseFloat(prompt("Enter second number"));
+        var sum = addNum(number1 , number2);
+        console.log("The sum of two number is :" + " " +sum);
 
-        // //Q4
-        // document.write("<h1>Question no : 4</h1>")
+        //Q4
+        document.write("<h1>Question no : 4</h1>")
 
-        // function add(a, b) {
-        //     return a + b;
-        // }
-        // function subtract(a, b) {
-        //     return a - b;
+        function add(a, b) {
+            return a + b;
+        }
+        function subtract(a, b) {
+            return a - b;
 
-        // }
-        // function multiply(a, b) {
-        //     return a * b;
+        }
+        function multiply(a, b) {
+            return a * b;
 
-        // }
-        // function divide(a, b) {
-        //     if (b !== 0) {
-        //         return a / b;
-        //     } else {
-        //         alert("Error !")
-        //     }
+        }
+        function divide(a, b) {
+            if (b !== 0) {
+                return a / b;
+            } else {
+                alert("Error !")
+            }
 
-        // }
-        // function calculator() {
-        //     var firstNum = parseFloat(prompt("Enter first number"));
-        //     var secondNum = parseFloat(prompt("Enter second number"));
-        //     var operator = prompt("Enter operator '+' ',-' ,'*' ,'/'");
+        }
+        function calculator() {
+            var firstNum = parseFloat(prompt("Enter first number"));
+            var secondNum = parseFloat(prompt("Enter second number"));
+            var operator = prompt("Enter operator '+' ',-' ,'*' ,'/'");
 
-        //     var result;
-        //     switch (operator) {
-        //         case "+":
-        //             result = add(firstNum, secondNum);
-        //             break;
+            var result;
+            switch (operator) {
+                case "+":
+                    result = add(firstNum, secondNum);
+                    break;
 
-        //         case "-":
-        //             result = subtract(firstNum, secondNum);
-        //             break;
+                case "-":
+                    result = subtract(firstNum, secondNum);
+                    break;
 
-        //         case "*":
-        //             result = multiply(firstNum, secondNum);
-        //             break;
+                case "*":
+                    result = multiply(firstNum, secondNum);
+                    break;
 
-        //         case "/":
-        //             result = divide(firstNum, secondNum);
-        //             break;
+                case "/":
+                    result = divide(firstNum, secondNum);
+                    break;
 
-        //         default:
-        //             alert("Invalid Operator !")
-        //             break;
-        //     }
-        //     document.write("The result is : " + result);
-        // }
+                default:
+                    alert("Invalid Operator !")
+                    break;
+            }
+            document.write("The result is : " + result);
+        }
 
-        // calculator();
+        calculator();
 
-        // // Q5
-        // document.write("<h1>Question no : 5</h1>")
+        // Q5
+        document.write("<h1>Question no : 5</h1>")
 
-        // function squareNum(number) {
-        //     return number * number;
-        // }
+        function squareNum(number) {
+            return number * number;
+        }
 
-        // var number = parseInt(prompt("Enter a number to square:"));
-        // var square = squareNum(number);
-        // console.log("The square of the number is: " + square);
+        var number = parseInt(prompt("Enter a number to square:"));
+        var square = squareNum(number);
+        console.log("The square of the number is: " + square);
 
-        // // Q6
-        // document.write("<h1>Question no : 6</h1>")
-        // function factorial(n) {
-        //     if (n === 0 || n === 1) {
-        //         return 1;
-        //     } else {
-        //         return n * factorial(n - 1);
-        //     }
-        // }
-        // var numInput = parseInt(prompt("Enter a number to compute its factorial:"));
-        // var result = factorial(numInput);
-        // console.log("The factorial of " + numInput + " is: " + result);
+        // Q6
+        document.write("<h1>Question no : 6</h1>")
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+        var numInput = parseInt(prompt("Enter a number to compute its factorial:"));
+        var result = factorial(numInput);
+        console.log("The factorial of " + numInput + " is: " + result);
 
-        // // Q7
-        // document.write("<h1>Question no : 7</h1>")
+        // Q7
+        document.write("<h1>Question no : 7</h1>")
 
-        // function displayCounting(start, end) {
-        //     var counting = '';
-        //     for (var i = start; i <= end; i++) {
-        //         counting += i + ' ';
-        //     }
-        //     return counting;
-        // }
-        // var startNumber = parseInt(prompt("Enter the start number:"));
-        // var endNumber = parseInt(prompt("Enter the end number:"));
+        function displayCounting(start, end) {
+            var counting = '';
+            for (var i = start; i <= end; i++) {
+                counting += i + ' ';
+            }
+            return counting;
+        }
+        var startNumber = parseInt(prompt("Enter the start number:"));
+        var endNumber = parseInt(prompt("Enter the end number:"));
 
-        // var countingResult = displayCounting(startNumber, endNumber);
-        // console.log("Counting: " + countingResult);
+        var countingResult = displayCounting(startNumber, endNumber);
+        console.log("Counting: " + countingResult);
 
-        // //  Q8
-        // document.write("<h1>Question no : 8</h1>")
+        //  Q8
+        document.write("<h1>Question no : 8</h1>")
 
-        // function calculateHypotenuse(base, perpendicular) {
-        //     function calculateSquare(value) {
-        //         return value * value;
-        //     }
-        //     // Calculate the squares of base and perpendicular
-        //     var baseSquared = calculateSquare(base);
-        //     var perpendicularSquared = calculateSquare(perpendicular);
-        //     // Calculate the hypotenuse using the Pythagorean theorem
-        //     var hypotenuseSquared = baseSquared + perpendicularSquared;
-        //     var hypotenuse = Math.sqrt(hypotenuseSquared);
+        function calculateHypotenuse(base, perpendicular) {
+            function calculateSquare(value) {
+                return value * value;
+            }
+            // Calculate the squares of base and perpendicular
+            var baseSquared = calculateSquare(base);
+            var perpendicularSquared = calculateSquare(perpendicular);
+            // Calculate the hypotenuse using the Pythagorean theorem
+            var hypotenuseSquared = baseSquared + perpendicularSquared;
+            var hypotenuse = Math.sqrt(hypotenuseSquared);
 
-        //     return hypotenuse;
-        // }
-        // var base = 3;
-        // var perpendicular = 4;
-        // console.log("The hypotenuse is: " + calculateHypotenuse(base, perpendicular));
+            return hypotenuse;
+        }
+        var base = 3;
+        var perpendicular = 4;
+        console.log("The hypotenuse is: " + calculateHypotenuse(base, perpendicular));
 
-        // // Q9
-        // // i.Arguments as values
-        // document.write("<h1>Question no : 9</h1>")
+        // Q9
+        // i.Arguments as values
+        document.write("<h1>Question no : 9</h1>")
 
-        // function calculateArea(width, height) {
-        //     return width * height;
-        // }
-        // //  Arguments passed as values
-        // console.log(calculateArea(5, 10));  // Output: 50
+        function calculateArea(width, height) {
+            return width * height;
+        }
+        //  Arguments passed as values
+        console.log(calculateArea(5, 10));  // Output: 50
 
-        // // ii. Arguments as variables
-        // function calculateArea(width, height) {
-        //     return width * height;
+        // ii. Arguments as variables
+        function calculateArea(width, height) {
+            return width * height;
 
-        // }
-        // var w = 8;
-        // var h = 12;
-        // console.log(calculateArea(w, h));
+        }
+        var w = 8;
+        var h = 12;
+        console.log(calculateArea(w, h));
 
         // Q10
         document.write("<h1>Question no : 10</h1>")
+         function isPalindrome(str) {
+              str = str.toLowerCase();
+              str = str.replace(/[^a-z0-9]/g, '');
+              var reversedStr = str.split('').reverse().join('');
+              return str === reversedStr;
+          }
 
 
-
-
+           console.log(isPalindrome("madam"));       // true
+           console.log(isPalindrome("hello"));       // false
+           console.log(isPalindrome("A man a plan a canal Panama")); // true
 
 
         // Q11
